@@ -1,2 +1,1 @@
-#JavaScript
-All basic Topics
+JavaScript Basic Topics
