@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body style="background: #212121; color: #f2f2f2;">
+    <h1>Chai Aur Code</h1>
+    <button id="stop" style="padding: 1rem; font-size: 18px; cursor: pointer;">Stop Code</button>
+</body>
+
+<script>
+    // setTimeout(function () {
+    //     console.log('Hey, EveryOne')
+    // }, 2000)
+
+    const test = function () {
+        console.log('Test SetTimeout Function')
+    }
+
+    const hchanges = function () {
+        let chnge = document.querySelector('h1')
+        chnge.innerHTML = 'Best Js Course'
+        console.log(chnge.innerHTML)
+    }
+
+    const changeMe = setTimeout(hchanges, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(changeMe)
+        console.log('Stopped')
+    })
+
+</script>
+
+</html>

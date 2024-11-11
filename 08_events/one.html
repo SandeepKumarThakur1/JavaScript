@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Images Groups</h1>
+    <ul id="images">
+        <li><img src="./images/sandy1.jpg" alt="image1" id="sandy1" width="200"></li>
+        <li><img src="./images/sandy2.jpg" alt="image2" id="sandy2" width="200"></li>
+        <li><img src="./images/sandy3.jpg" alt="image3" id="sandy3" width="200"></li>
+        <li><img src="./images/sandy4.jpg" alt="image4" id="sandy4" width="200"></li>
+        <li><img src="./images/sandy5.jpg" alt="image5" id="sandy5" width="200"></li>
+        <li>
+            <h2><a style="color: aliceblue;" href="https://www.google.com/" id="goGoogle">Go To Google</a></h2>
+        </li>
+    </ul>
+</body>
+<script>
+
+    // document.getElementById('sandy4').onclick = function () {
+    //     alert(`Click Sandy 4`)
+    // }
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, preventDefault
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, ScreenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', function (e) {
+        console.log(e.target.parentNode)
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id)
+            let removeit = e.target.parentNode
+            removeit.remove()
+            // removeit.parentNode.removeChild(removeit)
+        }
+    }, false)
+
+    // bubbling stop
+    // document.getElementById('sandy4').addEventListener('click', function (e) {
+    //     console.log(`sandy4 clicked`)
+    //     e.stopPropagation()
+    // }, false)
+
+</script>
+
+</html>

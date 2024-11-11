@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #ffff;">
+
+    <ul class="language">
+        <li class="langName">Ruby</li>
+    </ul>
+
+    <ul class="books">
+        <li class="list-book">Book 1</li>
+    </ul>
+
+</body>
+
+<script>
+
+    // Add li list in Language list
+    function addLang(langName) {
+        const liCreated = document.createElement('li')
+        liCreated.className = 'langName'
+        liCreated.innerHTML = langName
+        document.querySelector('.language').appendChild(liCreated)
+    }
+    addLang('JavaScript')
+    addLang('C++')
+    addLang('Java')
+
+
+    // Add Li to Ul 
+    function addBookList(book) {
+        const bookList = document.createElement('li')
+        bookList.className = 'list-book'
+        // const textInsideLi = document.createTextNode(book)
+        // bookList.appendChild(textInsideLi)
+        bookList.appendChild(document.createTextNode(book))
+        document.querySelector('.books').appendChild(bookList)
+    }
+    addBookList('Book 2')
+    addBookList('Book 3')
+    addBookList('Book 4')
+
+
+    // Edit
+    const editLi = document.querySelector('.books li:nth-child(2)')
+    editLi.innerHTML = 'Book Changed'
+
+    // Edit
+    const lastBook = document.querySelector('.books li:last-child')
+    const createLastBook = document.createElement('li')
+    createLastBook.textContent = 'Last Book Changed'
+    lastBook.replaceWith(createLastBook)
+
+    // Edit
+    const firstBook = document.querySelector('.books li:first-child')
+    firstBook.outerHTML = '<li>First Book Changed</li>'
+
+    // Remove
+    const removebook = document.querySelector('.books li:nth-child(3)')
+    removebook.remove()
+
+</script>
+
+</html>

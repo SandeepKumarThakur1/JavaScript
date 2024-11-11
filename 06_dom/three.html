@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body style="background-color: #212121; color: #ededed;">
+
+</body>
+<script>
+
+    const addDiv = document.createElement('div')
+    console.log(addDiv);
+    addDiv.className = 'myCreatedDiv';
+    addDiv.id = Math.round(Math.random() * 10 + 1);
+    addDiv.setAttribute('title', 'newCreatedTitle');
+    addDiv.style.background = 'green'
+    addDiv.style.padding = '16px'
+    // addDiv.innerText = 'This is Created Div';
+    const textAdd = document.createTextNode('This is Created text div with text')
+    addDiv.appendChild(textAdd)
+
+    document.body.appendChild(addDiv)
+
+</script>
+
+</html>

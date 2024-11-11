@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Child and Parent</title>
+</head>
+
+<body style="background-color: #212121; color: #ededed; font-size: 28px;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+
+    const main = document.querySelector('.parent')
+    // console.log(main)
+    // console.log(main.children[1].innerHTML)
+
+    // for (let i = 0; i < main.children.length; i++) {
+    //     console.log(main.children[i].innerHTML)
+    // }
+
+    // main.children[1].style.color = "orange"
+    // console.log(main.firstElementChild)
+    // console.log(main.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne)
+    // console.log(dayOne.parentElement)
+    // console.log(dayOne.nextElementSibling)
+
+    console.log(main.childNodes)
+
+    const child = main.childNodes
+    child.forEach((items) => {
+        console.log(items)
+    });
+
+</script>
+
+</html>
