@@ -27,4 +27,4 @@ function loginUserMessage(username) {
     }
     return `${username} just Logged In`
 }
-console.log(loginUserMessage())
+console.log(loginUserMessage('RAM'))

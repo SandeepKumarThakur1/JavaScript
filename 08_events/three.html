@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body style="background: #212121; color: #f2f2f2;">
+    <h1>Chai Aur JavaScript</h1>
+    <button id="start" style="padding: 1rem; font-size: 18px; cursor: pointer;">Start Code</button>
+    <button id="stop" style="padding: 1rem; font-size: 18px; cursor: pointer;">Stop Code</button>
+</body>
+
+<script>
+
+    let printDate = function (str) {
+        console.log('str ' + Date.now());
+    };
+
+    const startButton = document.querySelector('#start');
+    const stopButton = document.querySelector('#stop');
+
+    let intervalid; // Declare intervalid in a broader scope
+
+    startButton.addEventListener('click', function () {
+        if (!intervalid) { // Avoid multiple intervals
+            intervalid = setInterval(printDate, 2000, 'Hi');
+        }
+    });
+
+    stopButton.addEventListener('click', function () {
+        clearInterval(intervalid);
+        intervalid = null; // Reset intervalid
+    });
+
+
+</script>
+
+</html>

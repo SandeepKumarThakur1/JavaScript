@@ -14,23 +14,23 @@
 
 <script>
     // setTimeout(function () {
-    //     console.log('Hey, EveryOne')
+    //     console.log('sandeep')
     // }, 2000)
 
-    const test = function () {
-        console.log('Test SetTimeout Function')
+    const saySandeep = function () {
+        console.log('sandeep')
     }
+    setTimeout(saySandeep, 2000)
 
-    const hchanges = function () {
-        let chnge = document.querySelector('h1')
-        chnge.innerHTML = 'Best Js Course'
-        console.log(chnge.innerHTML)
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = 'Best JS Series'
+        console.log('Change Text')
     }
+    const changeMe = setTimeout(changeText, 2000)
 
-    const changeMe = setTimeout(hchanges, 2000)
-
-    document.querySelector('#stop').addEventListener('click', function () {
-        clearInterval(changeMe)
+    const button = document.querySelector('#stop')
+    button.addEventListener('click', function () {
+        clearTimeout(changeMe)
         console.log('Stopped')
     })
 

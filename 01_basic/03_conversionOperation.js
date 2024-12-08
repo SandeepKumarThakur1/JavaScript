@@ -37,10 +37,10 @@ let negValue = (-value)
 // console.log(2 ** 3);
 // console.log(2 % 5);
 
-// console.log("1 " + 1);
-// console.log(1 + " 1");
-// console.log("1 " + 1 + 1);
-// console.log(1 + 1 + "1");
+// console.log("1 " + 1); - 11
+// console.log(1 + " 1"); - 11
+// console.log("1 " + 1 + 1); - 111
+// console.log(1 + 1 + "1"); - 21
 
 let gameCounter = 100
 // gameCounter++;
