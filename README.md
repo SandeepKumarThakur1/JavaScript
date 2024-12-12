@@ -113,26 +113,31 @@
 
 #### Examples
 
-##### (a) Converting to Number
 - Number() Function Number() function ka use karke kisi bhi value ko number mein convert kiya ja sakta hai.
 
 ``` Javascript
     let str = "100";
     let num = Number(str); // 100 (String to Number)
 ```
-
-- Unary Plus (+) Operator + operator bhi string ko number mein convert karta hai.
-
-``` Javascript
-    let str = "200";
-    let num = +str; // 200 (String to Number)
-```
-
 - parseInt() (For integers) Agar aapko string ko integer mein convert karna ho:
 
 ``` Javascript
     let str = "123px";
     let num = parseInt(str); // 123 (String to Integer)
+```
+
+- String() Function String() function ka use karke kisi bhi value ko string mein convert kiya ja sakta hai.
+
+``` Javascript
+    let num = 25;
+    let str = String(num); // "25" (Number to String)
+```
+
+- toString() Method JavaScript objects aur values pe toString() method bhi use hota hai.
+
+``` Javascript
+    let num = 100;
+    let str = num.toString(); // "100" (Number to String)
 ```
 
 # JavaScript and Classes
