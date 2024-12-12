@@ -89,13 +89,13 @@
 - Implicit conversion tab hoti hai jab JavaScript automatically ek type ko doosre type mein convert kar leta hai, bina programmer ke intervention ke. Ye usually arithmetic aur logical operations ke time hota hai.
 
 #### Examples
-- 1. String + Number (Concatenation) Jab ek number aur string ko add kiya jata hai, toh JavaScript number ko string mein convert kar leta hai.
+- String + Number (Concatenation) Jab ek number aur string ko add kiya jata hai, toh JavaScript number ko string mein convert kar leta hai.
 
 ``` Javascript
     let result = "5" + 10; // "510" (string + number)
 ```
 
-- 2. Number + Boolean (Type Coercion) Boolean ko number mein convert kiya jata hai. true ko 1 aur false ko 0 banaya jata hai.
+- Number + Boolean (Type Coercion) Boolean ko number mein convert kiya jata hai. true ko 1 aur false ko 0 banaya jata hai.
 
 ``` Javascript
     let sum = 10 + true; // 11 (true is converted to 1)
