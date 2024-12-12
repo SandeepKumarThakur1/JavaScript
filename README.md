@@ -50,7 +50,7 @@
 ### Data Type on the basic of Memory
 - JavaScript me data types ko memory allocation ke basis par do major categories me divide kiya ja sakta hai:
 
-1. Primitive Data Types (Value Types)
+## 1. Primitive Data Types (Value Types)
 - Primitive data types wo hote hain jinme value directly store hoti hai. Jab aap in variables ko assign karte ho, to ye apni own copy ko store karte hain. Inka memory allocation directly value ke liye hota hai.
 
 **Key Features of Primitive Data Types:**
@@ -67,8 +67,7 @@
 6. Symbol (ES6)
 7. BigInt (for large integers)
 
-
-1. Non-Primitive Data Types (Reference Types)
+### 2. Non-Primitive Data Types (Reference Types)
 - Non-primitive data types wo hote hain jinme reference store hota hai, na ki actual value. Jab inko kisi doosre variable ko assign kiya jata hai, to wo reference copy hota hai, na ki value ka copy. Matlab, agar ek variable ko change kiya jata hai to doosra variable bhi effect ho sakta hai.
 
 **Key Features of Non-Primitive Data Types:**
