@@ -121,6 +121,20 @@
     let num = Number(str); // 100 (String to Number)
 ```
 
+- Unary Plus (+) Operator + operator bhi string ko number mein convert karta hai.
+
+``` Javascript
+    let str = "200";
+    let num = +str; // 200 (String to Number)
+```
+
+- parseInt() (For integers) Agar aapko string ko integer mein convert karna ho:
+
+``` Javascript
+    let str = "123px";
+    let num = parseInt(str); // 123 (String to Integer)
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
