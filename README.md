@@ -1,7 +1,7 @@
 # JavaScript
 - JavaScript ek programming language hai jo websites ko interactive aur dynamic banata hai, jaise buttons click karna, animations, aur real-time updates. Ye browsers aur server dono par kaam karta hai.
 
-## Variable
+## Variables in JavaScript
 - Variable ek container ya storage hota hai jo kisi value ko temporarily store karta hai, taaki usko program me use kiya ja sake. JavaScript me variables data ko manipulate aur reuse karne ke liye kaam aate hain.
 - Variable declare karne ke liye var, let, ya const ka use hota hai:
 
@@ -10,6 +10,20 @@
     const age = 25;     // Number value store
     var isActive = true; // Boolean value store
 ```
+
+### Types of Variables:
+- let: Block-scope variable, jo sirf us block me accessible hota hai.
+- const: Block-scope variable, jisme value change nahi ki ja sakti.
+- var: Function-scope variable, jo purane JavaScript versions me use hota tha.
+
+| Feature           | var                           | let                                  | const                                |
+|-------------------|-------------------------------|--------------------------------------|--------------------------------------|
+| Scope            | Function-scoped              | Block-scoped                        | Block-scoped                        |
+| Re-declaration   | Allowed                      | Not allowed                         | Not allowed                         |
+| Re-assignment    | Allowed                      | Allowed                             | Not allowed                         |
+| Hoisting         | Hoisted, but uninitialized (undefined by default) | Hoisted, but in Temporal Dead Zone | Hoisted, but in Temporal Dead Zone |
+| Usage Preference | Older style, avoid in modern code | Use for variables that change       | Use for constants that don't change |
+
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
