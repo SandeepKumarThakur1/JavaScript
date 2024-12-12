@@ -1,3 +1,16 @@
+# JavaScript
+- JavaScript ek programming language hai jo websites ko interactive aur dynamic banata hai, jaise buttons click karna, animations, aur real-time updates. Ye browsers aur server dono par kaam karta hai.
+
+## Variable
+- Variable ek container ya storage hota hai jo kisi value ko temporarily store karta hai, taaki usko program me use kiya ja sake. JavaScript me variables data ko manipulate aur reuse karne ke liye kaam aate hain.
+- Variable declare karne ke liye var, let, ya const ka use hota hai:
+
+``` Javascript
+    let name = "Rahul"; // String value store
+    const age = 25;     // Number value store
+    var isActive = true; // Boolean value store
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
