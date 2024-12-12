@@ -34,13 +34,15 @@
 - `use strict` ek special directive (string) hai jo JavaScript ko strict mode me execute karne ke liye enable karta hai. Strict mode JavaScript code me errors ko reduce karne aur bugs ko catch karne me madad karta hai.
 - Strict mode ka use code ko zyada secure aur reliable banata hai.
 
-#### How to Enable Strict Mode?
+### How to Enable Strict Mode?
 ``` Javascript
     "use strict";
     let x = 10; // Strict mode enabled for the whole script
 ```
-
-
+### Why Use "use strict"?
+- Bugs ko detect karna asaan hota hai.
+- Secure coding practices promote karta hai.
+- Modern JavaScript engines ke sath better optimization karta hai.
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
