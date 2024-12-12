@@ -163,6 +163,26 @@
     Boolean("Hello"); // true
 ```
 
+## Prefix and postfix
+
+- Prefix operator mein, increment ya decrement operation pehle hota hai aur fir value ko use kiya jata hai.
+
+``` Javascript
+    let x = 5;
+    let result = ++x;  // x ko pehle 1 se increment kiya jaata hai, fir result mein value assign hoti hai
+    console.log(x);     // 6
+    console.log(result); // 6
+```
+
+- Postfix operator mein, increment ya decrement operation baad mein hota hai. Matlab, pehle value ko use kiya jata hai, fir operation perform hota hai.
+
+``` Javascript
+    let x = 5;
+    let result = x++;  // Pehle result mein x ki value assign hoti hai, phir x ko increment kiya jaata hai
+    console.log(x);     // 6
+    console.log(result); // 5
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
