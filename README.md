@@ -47,6 +47,42 @@
 ### JavaScript Data Types
 - JavaScript me data types kaafi important hote hain, kyunki ye define karte hain ki kisi variable me kis tarah ka data store hoga. JavaScript dynamically typed language hai, iska matlab hai ki variable ka type usme assigned value ke basis par decide hota hai.
 
+### Data Type on the basic of Memory
+- JavaScript me data types ko memory allocation ke basis par do major categories me divide kiya ja sakta hai:
+
+1. Primitive Data Types (Value Types)
+- Primitive data types wo hote hain jinme value directly store hoti hai. Jab aap in variables ko assign karte ho, to ye apni own copy ko store karte hain. Inka memory allocation directly value ke liye hota hai.
+
+**Key Features of Primitive Data Types:**
+- They are `immutable` (unko change nahi kiya ja sakta).
+- When assigned to another variable, they create a copy (pass-by-value).
+- Memory mein unki size fixed hoti hai.
+
+### Types of Primitive Data Types:
+1. Number
+2. String
+3. Boolean
+4. Undefined
+5. Null
+6. Symbol (ES6)
+7. BigInt (for large integers)
+
+
+1. Non-Primitive Data Types (Reference Types)
+- Non-primitive data types wo hote hain jinme reference store hota hai, na ki actual value. Jab inko kisi doosre variable ko assign kiya jata hai, to wo reference copy hota hai, na ki value ka copy. Matlab, agar ek variable ko change kiya jata hai to doosra variable bhi effect ho sakta hai.
+
+**Key Features of Non-Primitive Data Types:**
+- They are `mutable` (unko modify kiya ja sakta hai).
+- When assigned to another variable, they create a reference (pass-by-reference).
+- Memory mein inka size dynamic hota hai, kyunki wo complex structures ko hold karte hain.
+
+### Types of Non-Primitive Data Types:
+1. Object
+2. Array
+3. Function
+4. Date
+5. RegExp (Regular Expressions)
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
