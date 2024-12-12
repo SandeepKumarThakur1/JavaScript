@@ -1,7 +1,7 @@
 # JavaScript
 - JavaScript ek programming language hai jo websites ko interactive aur dynamic banata hai, jaise buttons click karna, animations, aur real-time updates. Ye browsers aur server dono par kaam karta hai.
 
-## Variables in JavaScript
+### Variables in JavaScript
 - Variable ek container ya storage hota hai jo kisi value ko temporarily store karta hai, taaki usko program me use kiya ja sake. JavaScript me variables data ko manipulate aur reuse karne ke liye kaam aate hain.
 - Variable declare karne ke liye var, let, ya const ka use hota hai:
 
@@ -16,7 +16,7 @@
 - const: Block-scope variable, jisme value change nahi ki ja sakti.
 - var: Function-scope variable, jo purane JavaScript versions me use hota tha.
 
-## Difference Between var, let, and const in JavaScript:
+### Difference Between var, let, and const in JavaScript:
 | Feature           | var                           | let                                  | const                                |
 |-------------------|-------------------------------|--------------------------------------|--------------------------------------|
 | Scope            | Function-scoped              | Block-scoped                        | Block-scoped                        |
