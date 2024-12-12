@@ -44,6 +44,9 @@
 - Secure coding practices promote karta hai.
 - Modern JavaScript engines ke sath better optimization karta hai.
 
+### JavaScript Data Types
+- JavaScript me data types kaafi important hote hain, kyunki ye define karte hain ki kisi variable me kis tarah ka data store hoga. JavaScript dynamically typed language hai, iska matlab hai ki variable ka type usme assigned value ke basis par decide hota hai.
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
