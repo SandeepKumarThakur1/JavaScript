@@ -140,6 +140,29 @@
     let str = num.toString(); // "100" (Number to String)
 ```
 
+- Boolean() Function Boolean() function ka use karke kisi bhi value ko boolean mein convert kiya ja sakta hai.
+
+``` Javascript
+    let num = 0;
+    let boolVal = Boolean(num); // false (0 is falsy value)
+```
+
+- Falsy Values: JavaScript mein kuch values jo automatically false ban jaati hain:
+- 0, "" (empty string), null, undefined, NaN, false
+
+``` Javascript
+    Boolean(0); // false
+    Boolean(""); // false
+    Boolean(undefined); // false
+```
+
+- Truthy Values: Baaki sab values true ban jaati hain:
+
+``` Javascript
+    Boolean(42); // true
+    Boolean("Hello"); // true
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
