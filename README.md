@@ -16,6 +16,7 @@
 - const: Block-scope variable, jisme value change nahi ki ja sakti.
 - var: Function-scope variable, jo purane JavaScript versions me use hota tha.
 
+## Difference Between var, let, and const in JavaScript:
 | Feature           | var                           | let                                  | const                                |
 |-------------------|-------------------------------|--------------------------------------|--------------------------------------|
 | Scope            | Function-scoped              | Block-scoped                        | Block-scoped                        |
@@ -24,6 +25,10 @@
 | Hoisting         | Hoisted, but uninitialized (undefined by default) | Hoisted, but in Temporal Dead Zone | Hoisted, but in Temporal Dead Zone |
 | Usage Preference | Older style, avoid in modern code | Use for variables that change       | Use for constants that don't change |
 
+**Summary**:  
+- Use `let` for variables that need to be reassigned.  
+- Use `const` for constants or values that won't change.  
+- Avoid using `var`, as it's outdated and less predictable due to its function-scoping.
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
