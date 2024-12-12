@@ -102,6 +102,24 @@
     let sum2 = 10 + false; // 10 (false is converted to 0)
 ```
 
+- String + Boolean (Concatenation) Boolean values ko string mein convert karke concatenate kiya jata hai.
+
+``` Javascript
+    let concat = "Value: " + true; // "Value: true"
+```
+
+### Explicit Type Conversion (Type Casting)
+- Explicit conversion tab hoti hai jab programmer manually data type ko convert karta hai.
+
+#### Examples
+
+##### (a) Converting to Number
+- Number() Function Number() function ka use karke kisi bhi value ko number mein convert kiya ja sakta hai.
+
+``` Javascript
+    let str = "100";
+    let num = Number(str); // 100 (String to Number)
+```
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
