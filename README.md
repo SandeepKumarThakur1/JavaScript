@@ -82,6 +82,27 @@
 4. Date
 5. RegExp (Regular Expressions)
 
+### Conversion Operations
+- JavaScript mein conversion operations ka use type ko ek format se dusre format mein convert karne ke liye hota hai. Ye operations implicit (automatic) aur explicit (manual) conversion dono ke liye kiye ja sakte hain.
+
+### Implicit Type Conversion (Type Coercion)
+- Implicit conversion tab hoti hai jab JavaScript automatically ek type ko doosre type mein convert kar leta hai, bina programmer ke intervention ke. Ye usually arithmetic aur logical operations ke time hota hai.
+
+#### Examples
+- 1. String + Number (Concatenation) Jab ek number aur string ko add kiya jata hai, toh JavaScript number ko string mein convert kar leta hai.
+
+``` Javascript
+    let result = "5" + 10; // "510" (string + number)
+```
+
+- 2. Number + Boolean (Type Coercion) Boolean ko number mein convert kiya jata hai. true ko 1 aur false ko 0 banaya jata hai.
+
+``` Javascript
+    let sum = 10 + true; // 11 (true is converted to 1)
+    let sum2 = 10 + false; // 10 (false is converted to 0)
+```
+
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
