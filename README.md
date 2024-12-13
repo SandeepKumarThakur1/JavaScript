@@ -2,8 +2,9 @@
 - JavaScript ek programming language hai jo websites ko interactive aur dynamic banata hai, jaise buttons click karna, animations, aur real-time updates. Ye browsers aur server dono par kaam karta hai.
 
 ### Variables in JavaScript
-- Variable ek container ya storage hota hai jo kisi value ko temporarily store karta hai, taaki usko program me use kiya ja sake. JavaScript me variables data ko manipulate aur reuse karne ke liye kaam aate hain.
-- Variable declare karne ke liye var, let, ya const ka use hota hai:
+- Variable ek container ya storage hota hai jo kisi value ko temporarily store karta hai, taaki usko program me use kiya ja sake.
+- JavaScript me variables data ko manipulate aur reuse karne ke liye kaam aate hain.
+- Variable declare karne ke liye `var`, `let`, ya `const` ka use hota hai:
 
 ``` Javascript
     let name = "Rahul"; // String value store
@@ -92,7 +93,7 @@
 - String + Number (Concatenation) Jab ek number aur string ko add kiya jata hai, toh JavaScript number ko string mein convert kar leta hai.
 
 ``` Javascript
-    let result = "5" + 10; // "510" (string + number)
+    let result = "5" + 10; // " " (string + number)
 ```
 
 - Number + Boolean (Type Coercion) Boolean ko number mein convert kiya jata hai. true ko 1 aur false ko 0 banaya jata hai.
@@ -182,6 +183,47 @@
     console.log(x);     // 6
     console.log(result); // 5
 ```
+
+### Comparison Operators 
+- JavaScript me comparison operators ka use do values ko compare karne ke liye hota hai. Ye comparisons true ya false (boolean) return karte hain. 
+
+### Types of Comparison Operators in JavaScript
+1. Equality Operators
+2. Relational Operators
+3. Logical Operators
+4. Special Operators
+
+| Operator | Description                  | Example     | Output |
+|----------|------------------------------|-------------|--------|
+| ==       | Loose Equality (value compare only) | 5 == "5"    | true   |
+| ===      | Strict Equality (value + type)      | 5 === "5"   | false  |
+| !=       | Loose Inequality             | 5 != "5"    | false  |
+| !==      | Strict Inequality            | 5 !== "5"   | true   |
+
+
+| Operator | Description                  | Example     | Output |
+|----------|------------------------------|-------------|--------|
+| >        | Greater than                | 5 > 3       | true   |
+| <        | Less than                   | 5 < 3       | false  |
+| >=       | Greater than or equal to    | 5 >= 5      | true   |
+| <=       | Less than or equal to       | 5 <= 3      | false  |
+
+
+| Operator | Description              | Example         | Output |
+|----------|--------------------------|-----------------|--------|
+| &&       | Logical AND (all true)  | true && false   | false  |
+| ||       | Logical OR (any true)   | true || false   | true   |
+| !        | Logical NOT (negation)  | !true           | false  |
+
+### Key Differences Between `==` and `===`
+| Aspect         | == (Loose Equality)                   | === (Strict Equality)               |
+|----------------|---------------------------------------|-------------------------------------|
+| Type Coercion  | Yes, converts types before comparison | No, does not convert types          |
+| Comparison     | Compares values only                 | Compares values and types both      |
+| Example (True) | 5 == "5" (true)                      | 5 === 5 (true)                      |
+| Example (False)| 5 == "hello" (false)                 | 5 === "5" (false)                  |
+
+
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
