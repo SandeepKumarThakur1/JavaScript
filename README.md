@@ -441,6 +441,34 @@ date.setMinutes(30);
 console.log(date); // New date with minutes set to 30
 ```
 
+## Memory Management
+- In JavaScript, memory management ka kaafi important role hota hai, jisme data ko store aur manage karna shamil hai. Yeh automatic hota hai, lekin samajhna zaroori hai.
+
+### 1. Stack Memory
+- Stack memory mein primitive data types (like numbers, strings, booleans) store hote hain.
+- Jab function call hota hai, to local variables stack mein store hote hain aur function return hone par ye automatically remove ho jaate hain.
+
+``` Javascript 
+let a = 10; // 'a' stack memory mein store hoga
+```
+
+### 2. Heap Memory
+- Heap memory mein complex data types (like objects and arrays) store hote hain.
+- Yeh dynamically allocate hoti hai, aur jab objects/arrays ka reference end hota hai, to garbage collector usse free kar deta hai.
+
+``` Javascript 
+let obj = { name: "John" }; // 'obj' heap memory mein store hoga
+```
+
+### 3. Garbage Collection
+- JavaScript automatically unused data ko memory se remove karta hai garbage collection ke through.
+- Jab kisi object ya variable ka reference nahi hota, to garbage collector usko memory se free kar deta hai.
+
+### 4. Memory Leaks
+- Memory leak tab hota hai jab unnecessary memory ka use hota rahe, jaise ki unused objects ya listeners ka reference retained rehna.
+- JavaScript me aise leaks avoid karne ke liye best practices follow karna zaroori hai.
+
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
