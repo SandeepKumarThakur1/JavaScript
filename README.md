@@ -482,81 +482,58 @@ console.log(numbers[2]); // 3 (Index 2)
 
 ### Array Method
 ``` Javascript
-let arr = [1, 2, 3, 4, 5];
+// 1. push() - End mein element add karta hai
+myArr.push(6); 
+console.log(myArr); // Adds 6 to the array
 
-// 1. push() - End mein element add karna
-arr.push(6);
-console.log(arr); // [1, 2, 3, 4, 5, 6]
+// 2. pop() - Last element remove karta hai
+myArr.pop(); 
+console.log(myArr); // Removes last element
 
-// 2. pop() - Last element remove karna
-arr.pop();
-console.log(arr); // [1, 2, 3, 4, 5]
+// 3. unshift() - Start mein element add karta hai
+myArr.unshift("sandeep");
+console.log(myArr); // Adds "sandeep" at the beginning
 
-// 3. shift() - First element remove karna
-arr.shift();
-console.log(arr); // [2, 3, 4, 5]
+// 4. shift() - First element remove karta hai
+myArr.shift(); 
+console.log(myArr); // Removes the first element
 
-// 4. unshift() - Start mein element add karna
-arr.unshift(1);
-console.log(arr); // [1, 2, 3, 4, 5]
+// 5. includes() - Check karta hai agar element array mein exist karta hai
+console.log(myArr.includes(9)); // true/false if 9 exists
 
-// 5. splice() - Index par add/remove karna
-arr.splice(2, 1, 99);
-console.log(arr); // [1, 2, 99, 4, 5]
+// 6. indexOf() - Element ka index return karta hai
+console.log(myArr.indexOf(9)); // Returns index of 9 or -1 if not found
 
-// 6. slice() - Sub-array banana
-let subArr = arr.slice(1, 4);
-console.log(subArr); // [2, 99, 4]
+// 7. join() - Array ko string mein convert karta hai
+console.log(myArr.join()); // Joins array elements into a string
 
-// 7. concat() - Arrays ko combine karna
-let combined = arr.concat([6, 7, 8]);
-console.log(combined); // [1, 2, 99, 4, 5, 6, 7, 8]
+// 8. slice() - Sub-array banata hai (without modifying original)
+console.log(mainArr.slice(1, 3)); // Extracts elements from index 1 to 2
 
-// 8. join() - Array ko string mein convert karna
-console.log(arr.join("-")); // "1-2-99-4-5"
+// 9. splice() - Elements ko add/remove karta hai
+mainArr.splice(1, 3); // Removes 3 elements starting from index 1
+console.log(mainArr); 
 
-// 9. reverse() - Array ko ulta karna
-console.log(arr.reverse()); // [5, 4, 99, 2, 1]
+// 10. concat() - Do ya zyada arrays ko combine karta hai
+let marvel_heros = ["Ironman", "Thor"];
+let dc_heros = ["Batman", "Superman"];
+let allHeros = marvel_heros.concat(dc_heros);
+console.log(allHeros); // ["Ironman", "Thor", "Batman", "Superman"]
 
-// 10. sort() - Sorting karna
-arr.sort((a, b) => a - b); // Ascending
-console.log(arr); // [1, 2, 4, 5, 99]
+// 11. flat() - Nested arrays ko flatten karta hai
+let another_array = [1, [2, [3, [4]]]];
+console.log(another_array.flat(Infinity)); // [1, 2, 3, 4]
 
-// 11. map() - Saare elements par function lagana
-let squared = arr.map(x => x * x);
-console.log(squared); // [1, 4, 16, 25, 9801]
+// 12. isArray() - Check karta hai ki variable array hai ya nahi
+console.log(Array.isArray(another_array)); // true
 
-// 12. filter() - Condition-based elements filter karna
-let greaterThanFive = arr.filter(x => x > 5);
-console.log(greaterThanFive); // [99]
+// 13. from() - Array-like object ya string ko array mein convert karta hai
+console.log(Array.from('Sandeep')); // ['S', 'a', 'n', 'd', 'e', 'e', 'p']
+console.log(Array.from({ name: 'sandeep' })); // [] (Not iterable object)
 
-// 13. reduce() - Single value mein reduce karna
-let sum = arr.reduce((acc, val) => acc + val, 0);
-console.log(sum); // 111
-
-// 14. forEach() - Har element par kaam karna
-arr.forEach(x => console.log(x)); // Prints: 1, 2, 4, 5, 99
-
-// 15. find() - Pehla matching element return karna
-let firstBig = arr.find(x => x > 10);
-console.log(firstBig); // 99
-
-// 16. findIndex() - Matching element ka index return karna
-let indexBig = arr.findIndex(x => x > 10);
-console.log(indexBig); // 4
-
-// 17. includes() - Element exist karta hai ya nahi
-console.log(arr.includes(4)); // true
-
-// 18. some() - Koi ek element condition match karta hai?
-console.log(arr.some(x => x > 50)); // true
-
-// 19. every() - Saare elements condition match karte hain?
-console.log(arr.every(x => x > 0)); // true
-
-// 20. flat() - Nested arrays ko flatten karna
-let nestedArr = [1, [2, [3, 4]]];
-console.log(nestedArr.flat(2)); // [1, 2, 3, 4]
+// 14. of() - Arguments ko ek array mein convert karta hai
+let score1 = 10, score2 = 20, score3 = 30;
+console.log(Array.of(score1, score2, score3)); // [10, 20, 30]
 ```
 
 # JavaScript and Classes
