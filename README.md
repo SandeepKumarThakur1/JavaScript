@@ -235,7 +235,7 @@
 | Example (False)| 5 == "hello" (false)                 | 5 === "5" (false)                  |
 
 ## String
-- JavaScript me string ek sequence of characters hai jo " ", ' ', ya (` `) (template literals) me likhi jaati hai.
+- JavaScript me string ek sequence of characters hai jo " ", ' ', ya `template literals` me likhi jaati hai.
 
 ### String ke Features
 1. `Immutable`: Ek baar string ban gayi, uska content change nahi hota.
