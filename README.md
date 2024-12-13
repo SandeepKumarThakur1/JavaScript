@@ -581,6 +581,23 @@ greet("Alice", "Bob", "Charlie"); // Hello, Alice, Bob, Charlie!
 - `Global Access`: Use kisi bhi part of application mein access kiya ja sake.
 - `Centralized State Management`: Shared resource ko manage karne ke liye useful hai.
 
+## Object in JavaScript
+- Object JavaScript ka ek fundamental data structure hai jo key-value pairs ke form mein data ko store karta hai. Har key ek string (ya symbol) hoti hai, aur uska value kisi bhi data type ka ho sakta hai (number, string, array, function, etc.).
+
+### Object Literals in JavaScript
+- Object literals ek simple aur commonly used syntax hai objects ko create karne ka. Isme object ko {} ke andar key-value pairs ke form mein define kiya jata hai.
+
+``` Javascript
+// Syntax of Object Literal
+let person = {
+    name: "Sandeep",
+    age: 25,
+    greet: function() {
+        console.log("Hello!");
+    }
+};
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
