@@ -536,6 +536,44 @@ let score1 = 10, score2 = 20, score3 = 30;
 console.log(Array.of(score1, score2, score3)); // [10, 20, 30]
 ```
 
+### Spread Operator
+- Spread operator ka use array ya object ke elements ko expand karne ke liye hota hai. Ye elements ko individual items ke form mein tod deta hai.
+
+``` Javascript
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let merged = [...arr1, ...arr2];
+console.log(merged); // [1, 2, 3, 4, 5, 6]
+
+let obj1 = { a: 1, b: 2 };
+let obj2 = { c: 3, d: 4 };
+let mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj); // { a: 1, b: 2, c: 3, d: 4 }
+```
+
+### Rest Operator
+- Rest operator ka use multiple values ko group karne ke liye hota hai. Ye unhe ek array ya object ke andar combine kar deta hai.
+
+``` Javascript
+let arr = [1, 2, 3, 4, 5];
+let [first, second, ...rest] = arr;
+console.log(first); // 1
+console.log(second); // 2
+console.log(rest); // [3, 4, 5]
+
+let obj = { a: 1, b: 2, c: 3, d: 4 };
+let { a, b, ...rest } = obj;
+console.log(a); // 1
+console.log(b); // 2
+console.log(rest); // { c: 3, d: 4 }
+
+function greet(...names) { // Combines arguments into an array
+    console.log(`Hello, ${names.join(", ")}!`);
+}
+greet("Alice", "Bob", "Charlie"); // Hello, Alice, Bob, Charlie!
+```
+
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
