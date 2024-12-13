@@ -379,6 +379,68 @@ console.log(Math.pow(2, 3)); // 8
 console.log(Math.abs(-5)); // 5
 ```
 
+## Date
+- JavaScript mein Date object ka use hota hai date aur time ko handle karne ke liye. Aap Date object se current date and time ko get kar sakte hain, date ko manipulate kar sakte hain, aur specific date and time values set kar sakte hain.
+
+### Creating a Date Object
+``` Javascript 
+// Current date and time
+let date1 = new Date();
+console.log(date1); // Example: Fri Dec 13 2024 12:00:00 GMT+0000 (UTC)
+
+// Specific date (year, month, day)
+let date2 = new Date(2024, 11, 13); // month is 0-based (11 = December)
+console.log(date2); // Example: Thu Dec 13 2024 00:00:00 GMT+0000 (UTC)
+```
+
+### Date Method
+``` Javascript 
+// 1. new Date() - Current date aur time ko get karta hai
+let date = new Date();
+console.log(date); // Example: Fri Dec 13 2024 12:00:00 GMT+0000 (UTC)
+
+// 2. getFullYear() - Year ko get karta hai
+console.log(date.getFullYear()); // 2024
+
+// 3. getMonth() - Month ko get karta hai (0-based index, 0 = January)
+console.log(date.getMonth()); // 11 (December)
+
+// 4. getDate() - Day of the month ko get karta hai (1-31)
+console.log(date.getDate()); // 13
+
+// 5. getDay() - Day of the week ko get karta hai (0 = Sunday, 1 = Monday, ... 6 = Saturday)
+console.log(date.getDay()); // 5 (Friday)
+
+// 6. getHours() - Hours ko get karta hai (0-23)
+console.log(date.getHours()); // Example: 12
+
+// 7. getMinutes() - Minutes ko get karta hai (0-59)
+console.log(date.getMinutes()); // Example: 45
+
+// 8. getSeconds() - Seconds ko get karta hai (0-59)
+console.log(date.getSeconds()); // Example: 30
+
+// 9. setFullYear(year) - Year ko set karta hai
+date.setFullYear(2025);
+console.log(date); // New date with year set to 2025
+
+// 10. setMonth(month) - Month ko set karta hai (0-based index)
+date.setMonth(0); // January
+console.log(date); // New date with month set to January
+
+// 11. setDate(day) - Day ko set karta hai
+date.setDate(25);
+console.log(date); // New date with day set to 25
+
+// 12. setHours(hours) - Hours ko set karta hai
+date.setHours(10);
+console.log(date); // New date with hours set to 10
+
+// 13. setMinutes(minutes) - Minutes ko set karta hai
+date.setMinutes(30);
+console.log(date); // New date with minutes set to 30
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
