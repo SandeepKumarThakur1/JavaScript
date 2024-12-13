@@ -193,6 +193,7 @@
 3. Logical Operators
 4. Special Operators
 
+### Equality Operators
 | Operator | Description                  | Example     | Output |
 |----------|------------------------------|-------------|--------|
 | ==       | Loose Equality (value compare only) | 5 == "5"    | true   |
@@ -200,7 +201,7 @@
 | !=       | Loose Inequality             | 5 != "5"    | false  |
 | !==      | Strict Inequality            | 5 !== "5"   | true   |
 
-
+### Relationaly Operators
 | Operator | Description                  | Example     | Output |
 |----------|------------------------------|-------------|--------|
 | >        | Greater than                | 5 > 3       | true   |
@@ -208,12 +209,22 @@
 | >=       | Greater than or equal to    | 5 >= 5      | true   |
 | <=       | Less than or equal to       | 5 <= 3      | false  |
 
-
+### Logical Operators
 | Operator | Description              | Example         | Output |
 |----------|--------------------------|-----------------|--------|
 | &&       | Logical AND (all true)  | true && false   | false  |
 | ||       | Logical OR (any true)   | true || false   | true   |
 | !        | Logical NOT (negation)  | !true           | false  |
+
+###  Special Operators
+
+``` Javascript
+    console.log(typeof 5);         // "number"
+    console.log(typeof "hello");   // "string"
+
+    let arr = [];
+    console.log(arr instanceof Array); // true
+```
 
 ### Key Differences Between `==` and `===`
 | Aspect         | == (Loose Equality)                   | === (Strict Equality)               |
