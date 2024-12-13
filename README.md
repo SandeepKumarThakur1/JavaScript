@@ -319,6 +319,66 @@ let str15 = "World";
 console.log(str14.concat(", ", str15)); // "Hello, World"
 ```
 
+## Numbers in JavaScript
+- JavaScript mein numbers ko handle karne ke liye primitive data type ka use hota hai. Yahan par integer aur floating-point numbers dono hote hain.
+
+``` Javascript
+let num1 = 5;
+let num2 = 3;
+
+// Addition
+console.log(num1 + num2); // 8
+
+// Subtraction
+console.log(num1 - num2); // 2
+
+// Multiplication
+console.log(num1 * num2); // 15
+
+// Division
+console.log(num1 / num2); // 1.666...
+
+// Modulus (remainder)
+console.log(num1 % num2); // 2
+
+// Exponentiation
+console.log(num1 ** num2); // 125
+```
+
+## Math Object
+- JavaScript mein Math object built-in functions provide karta hai for performing complex mathematical calculations.
+
+### Math methods
+``` Javascript 
+// 1. Math.round() - Number ko nearest integer tak round karta hai
+console.log(Math.round(4.7)); // 5
+console.log(Math.round(4.4)); // 4
+
+// 2. Math.floor() - Number ko lower nearest integer tak round karta hai
+console.log(Math.floor(4.7)); // 4
+
+// 3. Math.ceil() - Number ko upper nearest integer tak round karta hai
+console.log(Math.ceil(4.3)); // 5
+
+// 4. Math.max() - Diye gaye numbers mein se sabse bada number return karta hai
+console.log(Math.max(1, 5, 10)); // 10
+
+// 5. Math.min() - Diye gaye numbers mein se sabse chhota number return karta hai
+console.log(Math.min(1, 5, 10)); // 1
+
+// 6. Math.random() - 0 se 1 ke beech random number generate karta hai
+console.log(Math.random()); // Example: 0.345678
+
+// 7. Math.sqrt() - Number ka square root return karta hai
+console.log(Math.sqrt(16)); // 4
+
+// 8. Math.pow(base, exponent) - Base ko exponent tak raise karta hai
+console.log(Math.pow(2, 3)); // 8
+
+// 9. Math.abs() - Number ka absolute value return karta hai
+console.log(Math.abs(-5)); // 5
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
