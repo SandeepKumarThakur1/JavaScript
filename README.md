@@ -468,6 +468,17 @@ let obj = { name: "John" }; // 'obj' heap memory mein store hoga
 - Memory leak tab hota hai jab unnecessary memory ka use hota rahe, jaise ki unused objects ya listeners ka reference retained rehna.
 - JavaScript me aise leaks avoid karne ke liye best practices follow karna zaroori hai.
 
+## Array in JavaScript
+- Array ek collection hota hai jisme multiple values ko ek single variable mein store kar sakte hain. Ye 0-based index system pe kaam karta hai, yani pehla element index 0 pe hota hai.
+
+``` Javascript
+let fruits = ["Apple", "Banana", "Orange"]; // String values
+let numbers = [1, 2, 3, 4]; // Number values
+let mixed = [1, "Apple", true]; // Mixed values
+
+console.log(fruits[0]); // "Apple" (Index 0)
+console.log(numbers[2]); // 3 (Index 2)
+```
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
