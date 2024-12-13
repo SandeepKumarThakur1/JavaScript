@@ -598,7 +598,6 @@ let person = {
 };
 
 const mySym = Symbol('key1')
-
 const JsUser = {
     name: 'Sandeep',
     'Full name': 'Sandeep Kumar',
@@ -621,6 +620,58 @@ JsUser.email = 'sandeepkumar@gmail.com'
 // console.log(JsUser);
 ```
 
+## Function in JavaScript
+- Function ek block of code hota hai jo kisi specific task ko perform karta hai. Function ko define karne ke baad, usse baar-baar call kiya ja sakta hai jab bhi wo task perform karna ho.
+
+```Javascript
+// Function Declaration Syntax
+function greet() {
+    console.log("Hello, World!");
+}
+greet(); // Call the function
+
+// Function with Parameters
+function greet(name) {
+    console.log("Hello, " + name);
+}
+greet("Sandeep"); // "Hello, Sandeep"
+
+// Function with Return Value
+function add(a, b) {
+    return a + b;
+}
+let result = add(5, 3);
+console.log(result); // 8
+
+// Function Expression
+let multiply = function(a, b) {
+    return a * b;
+};
+console.log(multiply(4, 2)); // 8
+
+// Arrow function
+let add = (a, b) => a + b;
+console.log(add(3, 2)); // 5
+
+// Anonymous Functions
+let greet = function() {
+    console.log("Hello, Anonymous!");
+};
+greet(); // "Hello, Anonymous!"
+
+// IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log("I am an IIFE!");
+})();
+
+// Default Parameters:
+function greet(name = "Guest") {
+    console.log("Hello, " + name);
+}
+greet("Sandeep"); // "Hello, Sandeep"
+greet(); // "Hello, Guest"
+
+```
 
 
 # JavaScript and Classes
