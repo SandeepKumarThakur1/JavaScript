@@ -573,6 +573,13 @@ function greet(...names) { // Combines arguments into an array
 greet("Alice", "Bob", "Charlie"); // Hello, Alice, Bob, Charlie!
 ```
 
+## Singleton Design Pattern in JavaScript
+- Singleton ek design pattern hai jo ensure karta hai ki ek class ka sirf ek hi instance create ho, aur us instance ko globally access kiya jaa sake.
+
+### Purpose of Singleton
+- `Single Instance`: Ek object ka sirf ek hi instance hona chahiye.
+- `Global Access`: Use kisi bhi part of application mein access kiya ja sake.
+- `Centralized State Management`: Shared resource ko manage karne ke liye useful hai.
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
