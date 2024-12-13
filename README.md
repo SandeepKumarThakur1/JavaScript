@@ -480,6 +480,85 @@ console.log(fruits[0]); // "Apple" (Index 0)
 console.log(numbers[2]); // 3 (Index 2)
 ```
 
+### Array Method
+``` Javascript
+let arr = [1, 2, 3, 4, 5];
+
+// 1. push() - End mein element add karna
+arr.push(6);
+console.log(arr); // [1, 2, 3, 4, 5, 6]
+
+// 2. pop() - Last element remove karna
+arr.pop();
+console.log(arr); // [1, 2, 3, 4, 5]
+
+// 3. shift() - First element remove karna
+arr.shift();
+console.log(arr); // [2, 3, 4, 5]
+
+// 4. unshift() - Start mein element add karna
+arr.unshift(1);
+console.log(arr); // [1, 2, 3, 4, 5]
+
+// 5. splice() - Index par add/remove karna
+arr.splice(2, 1, 99);
+console.log(arr); // [1, 2, 99, 4, 5]
+
+// 6. slice() - Sub-array banana
+let subArr = arr.slice(1, 4);
+console.log(subArr); // [2, 99, 4]
+
+// 7. concat() - Arrays ko combine karna
+let combined = arr.concat([6, 7, 8]);
+console.log(combined); // [1, 2, 99, 4, 5, 6, 7, 8]
+
+// 8. join() - Array ko string mein convert karna
+console.log(arr.join("-")); // "1-2-99-4-5"
+
+// 9. reverse() - Array ko ulta karna
+console.log(arr.reverse()); // [5, 4, 99, 2, 1]
+
+// 10. sort() - Sorting karna
+arr.sort((a, b) => a - b); // Ascending
+console.log(arr); // [1, 2, 4, 5, 99]
+
+// 11. map() - Saare elements par function lagana
+let squared = arr.map(x => x * x);
+console.log(squared); // [1, 4, 16, 25, 9801]
+
+// 12. filter() - Condition-based elements filter karna
+let greaterThanFive = arr.filter(x => x > 5);
+console.log(greaterThanFive); // [99]
+
+// 13. reduce() - Single value mein reduce karna
+let sum = arr.reduce((acc, val) => acc + val, 0);
+console.log(sum); // 111
+
+// 14. forEach() - Har element par kaam karna
+arr.forEach(x => console.log(x)); // Prints: 1, 2, 4, 5, 99
+
+// 15. find() - Pehla matching element return karna
+let firstBig = arr.find(x => x > 10);
+console.log(firstBig); // 99
+
+// 16. findIndex() - Matching element ka index return karna
+let indexBig = arr.findIndex(x => x > 10);
+console.log(indexBig); // 4
+
+// 17. includes() - Element exist karta hai ya nahi
+console.log(arr.includes(4)); // true
+
+// 18. some() - Koi ek element condition match karta hai?
+console.log(arr.some(x => x > 50)); // true
+
+// 19. every() - Saare elements condition match karte hain?
+console.log(arr.every(x => x > 0)); // true
+
+// 20. flat() - Nested arrays ko flatten karna
+let nestedArr = [1, [2, [3, 4]]];
+console.log(nestedArr.flat(2)); // [1, 2, 3, 4]
+```
+
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
 
