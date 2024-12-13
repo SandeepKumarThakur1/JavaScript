@@ -234,7 +234,27 @@
 | Example (True) | 5 == "5" (true)                      | 5 === 5 (true)                      |
 | Example (False)| 5 == "hello" (false)                 | 5 === "5" (false)                  |
 
+## String
+- JavaScript me string ek sequence of characters hai jo " ", ' ', ya ` ` (template literals) me likhi jaati hai.
 
+### String ke Features
+1. `Immutable`: Ek baar string ban gayi, uska content change nahi hota.
+2. `Indexing`: String zero-based indexing follow karti hai.
+
+``` Javascript
+let str = "JavaScript";
+console.log(str[0]); // 'J'
+```
+
+### Template Literals
+- Interpolation aur multi-line ke liye:
+
+``` Javascript
+let name = "John";
+let greet = `Hello, ${name}!`;
+console.log(greet); // "Hello, John!"
+
+```
 
 # JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
