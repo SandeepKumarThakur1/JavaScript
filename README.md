@@ -260,60 +260,60 @@ console.log(greet); // "Hello, John!"
 
 ### String Methods
 ``` Javascript
-// 1. toUpperCase() - Converts string to uppercase
+// 1. toUpperCase() - String ko uppercase mein convert karta hai
 let str = "hello";
 console.log(str.toUpperCase()); // "HELLO"
 
-// 2. toLowerCase() - Converts string to lowercase
+// 2. toLowerCase() - String ko lowercase mein convert karta hai
 let str2 = "HELLO";
 console.log(str2.toLowerCase()); // "hello"
 
-// 3. charAt() - Returns character at specified index
+// 3. charAt() - Given index par character return karta hai
 let str3 = "JavaScript";
 console.log(str3.charAt(0)); // "J"
 
-// 4. indexOf() - Returns the index of the first occurrence of a substring
+// 4. indexOf() - Substring ka pehla occurrence ka index return karta hai
 let str4 = "Hello, World!";
 console.log(str4.indexOf("World")); // 7
 
-// 5. includes() - Checks if substring is present in the string
+// 5. includes() - Check karta hai ki substring string mein hai ya nahi
 let str5 = "Hello, World!";
 console.log(str5.includes("World")); // true
 
-// 6. slice() - Extracts part of the string
+// 6. slice() - String ke ek part ko extract karta hai
 let str6 = "JavaScript";
 console.log(str6.slice(0, 4)); // "Java"
 
-// 7. substring() - Extracts characters between two indices
+// 7. substring() - Do indices ke beech characters ko extract karta hai
 let str7 = "JavaScript";
 console.log(str7.substring(4, 10)); // "Script"
 
-// 8. replace() - Replaces substring with another
+// 8. replace() - Substring ko kisi aur substring se replace karta hai
 let str8 = "Hello";
 console.log(str8.replace("e", "a")); // "Hallo"
 
-// 9. trim() - Removes whitespace from both ends of the string
+// 9. trim() - String ke starting aur ending spaces ko remove karta hai
 let str9 = "  Hello  ";
 console.log(str9.trim()); // "Hello"
 
-// 10. split() - Splits string into an array
+// 10. split() - String ko array mein split karta hai
 let str10 = "apple,banana,orange";
 let arr = str10.split(",");
 console.log(arr); // ["apple", "banana", "orange"]
 
-// 11. repeat() - Repeats the string a specified number of times
+// 11. repeat() - String ko given number of times repeat karta hai
 let str11 = "Hi!";
 console.log(str11.repeat(3)); // "Hi!Hi!Hi!"
 
-// 12. startsWith() - Checks if the string starts with a specified substring
+// 12. startsWith() - Check karta hai ki string specified substring se start hoti hai
 let str12 = "JavaScript";
 console.log(str12.startsWith("Java")); // true
 
-// 13. endsWith() - Checks if the string ends with a specified substring
+// 13. endsWith() - Check karta hai ki string specified substring se end hoti hai
 let str13 = "JavaScript";
 console.log(str13.endsWith("Script")); // true
 
-// 14. concat() - Concatenates two or more strings
+// 14. concat() - Do ya zyada strings ko concatenate karta hai
 let str14 = "Hello";
 let str15 = "World";
 console.log(str14.concat(", ", str15)); // "Hello, World"
