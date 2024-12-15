@@ -715,3 +715,21 @@ greet(); // "Hello, Guest"
 
 - `Instances (new, this)` - Instance ka matlab hai ek specific object jo ek class ya constructor function se banaya gaya ho. Jab hum ek constructor function ko new keyword ke saath call karte hain, toh hum ek new instance create karte hain.
 
+## NEW Keyword
+- `new` ka use naye object banane ke liye hota hai. Ye kisi constructor function ya class ke saath kaam karta hai.
+
+### How `new` Works Internally
+1. Ek naya khaali object banata hai.
+2. Prototype set karta hai constructor function ke hisaab se.
+3. Constructor function ko call karta hai, aur this ko us naye object se link karta hai.
+4. Naya object return kar deta hai.
+
+``` Javascript
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+let person1 = new Person("Sandeep", 25); 
+console.log(person1.name); // Output: "Sandeep"
+```
