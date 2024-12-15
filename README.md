@@ -468,6 +468,8 @@ let obj = { name: "John" }; // 'obj' heap memory mein store hoga
 - Memory leak tab hota hai jab unnecessary memory ka use hota rahe, jaise ki unused objects ya listeners ka reference retained rehna.
 - JavaScript me aise leaks avoid karne ke liye best practices follow karna zaroori hai.
 
+![Alt Text](./images-git/memory.png)
+
 ## Array in JavaScript
 - Array ek collection hota hai jisme multiple values ko ek single variable mein store kar sakte hain. Ye 0-based index system pe kaam karta hai, yani pehla element index 0 pe hota hai.
 
