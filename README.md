@@ -679,6 +679,15 @@ greet(); // "Hello, Guest"
 ### OOP (Object-Oriented Programming) in JavaScript
 - OOP (Object-Oriented Programming) ek programming style hai jo objects ke around focused hota hai. Isme 4 main pillars hote hain
 
+### 4 Pillars
+- `Abstraction` :- Sirf necessary details dikhana, baaki complexity hide karna.
+- `Encapsulation` :- Data aur methods ko ek object ke andar band karna. Private properties ko hide karna.
+- `Inheritance` :- Ek class ka code dusri class me reuse karna.
+- `Polymorphism` :- Same method ka different behavior.
+
+### Object
+- Collection of properties and methods.
+
 ### Why use OOP?
 - Code reusability (Inheritance).
 - Easy to manage (Encapsulation).
@@ -687,6 +696,7 @@ greet(); // "Hello, Guest"
 ### Part Of OOP
 * `Object literal` :- Object literal JavaScript me object banane ka ek simplest aur most common method hai. Isme object ko directly curly braces {} ke andar define kiya jata hai, jisme key-value pairs hoti hain.
 
+### Key Words
 - `Constructor Function` :- A constructor function ek special type ki function hoti hai jo objects banane ke liye use ki jaati hai. Isme new keyword ka use karke ek object banaya jaata hai aur us object ko automatically initialize kiya jaata hai.
 
 - `Prototypes (Proto)` :- JavaScript me prototype ek aisa concept hai jisme ek object apne parent object se properties aur methods inherit karta hai. Matlab, har object ka ek parent object hota hai jahan se wo properties ya methods le sakta hai.
@@ -695,8 +705,3 @@ greet(); // "Hello, Guest"
 
 - `Instances (new, this)` - Instance ka matlab hai ek specific object jo ek class ya constructor function se banaya gaya ho. Jab hum ek constructor function ko new keyword ke saath call karte hain, toh hum ek new instance create karte hain.
 
-### 4 Pillars
-- `Abstraction` :- Sirf necessary details dikhana, baaki complexity hide karna.
-- `Encapsulation` :- Data aur methods ko ek object ke andar band karna. Private properties ko hide karna.
-- `Inheritance` :- Ek class ka code dusri class me reuse karna.
-- `Polymorphism` :- Same method ka different behavior.
