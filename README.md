@@ -470,6 +470,7 @@ let obj = { name: "John" }; // 'obj' heap memory mein store hoga
 
 ![Alt Text](./images-git/memory.png)
 
+
 ## Array in JavaScript
 - Array ek collection hota hai jisme multiple values ko ek single variable mein store kar sakte hain. Ye 0-based index system pe kaam karta hai, yani pehla element index 0 pe hota hai.
 
@@ -674,6 +675,13 @@ greet("Sandeep"); // "Hello, Sandeep"
 greet(); // "Hello, Guest"
 
 ```
+
+## JavaScript Execution Context
+
+![Alt Text](./images-git/Execution.png)
+![Alt Text](./images-git/Execution1.png)
+![Alt Text](./images-git/Execution2.png)
+![Alt Text](./images-git/Execution3.png)
 
 ## JavaScript and Classes
 - JavaScript me classes ek tarah ka blueprint ya template hoti hain jo objects banane ke liye use hoti hain. Agar aapko ek hi type ke objects bar-bar banane hain, toh classes kaafi helpful hoti hain. Yeh JavaScript ke ES6 version se introduce hui thi. Classes ka syntax simple aur readable hota hai, jo traditional prototype-based inheritance se zyada organized hai.
