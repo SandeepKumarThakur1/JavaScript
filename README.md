@@ -709,7 +709,7 @@ greet(); // "Hello, Guest"
 ### Key Words
 - `Constructor Function` :- A constructor function ek special type ki function hoti hai jo objects banane ke liye use ki jaati hai. Isme new keyword ka use karke ek object banaya jaata hai aur us object ko automatically initialize kiya jaata hai.
 
-### Exmaple
+- #### Exmaple
 
 ``` Javascript
 function userInfo(username, loginCount, IsLogin) {
