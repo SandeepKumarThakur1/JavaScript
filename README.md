@@ -709,6 +709,28 @@ greet(); // "Hello, Guest"
 ### Key Words
 - `Constructor Function` :- A constructor function ek special type ki function hoti hai jo objects banane ke liye use ki jaati hai. Isme new keyword ka use karke ek object banaya jaata hai aur us object ko automatically initialize kiya jaata hai.
 
+### Exmaple
+
+``` Javascript
+function userInfo(username, loginCount, IsLogin) {
+    this.username = username // this.username is a variable.
+    this.loginCount = loginCount
+    this.IsLogin = IsLogin
+
+    this.greating = function userHello() {
+        console, log(`Welcome ${this.username}`)
+    }
+    return this;
+}
+
+const userOne = new userInfo('Sandeep', 21, true) // new keyword create new Instances.
+const userTwo = new userInfo('Rahul', 12, false)
+console.log(userOne.constructor)
+// console.log(userTwo)
+
+console.log(userOne instanceof userInfo) // true
+```
+
 - `Prototypes (Proto)` :- JavaScript me prototype ek aisa concept hai jisme ek object apne parent object se properties aur methods inherit karta hai. Matlab, har object ka ek parent object hota hai jahan se wo properties ya methods le sakta hai.
 
 - `Classes` :- Class ek blueprint hota hai jisme aap properties aur methods ko define karte ho. Aap phir is class se multiple objects create kar sakte ho.

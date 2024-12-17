@@ -21,7 +21,7 @@ function userInfo(username, loginCount, IsLogin) {
     this.IsLogin = IsLogin
 
     this.greating = function userHello() {
-        console, log('HELLO')
+        console, log(`Welcome ${this.username}`)
     }
 
     return this;
@@ -29,5 +29,5 @@ function userInfo(username, loginCount, IsLogin) {
 
 const userOne = new userInfo('Sandeep', 21, true) // new keyword create new Instances.
 const userTwo = new userInfo('Rahul', 12, false)
-console.log(userOne)
-console.log(userTwo)
+console.log(userOne.constructor)
+// console.log(userTwo)
